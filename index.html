@@ -32,45 +32,27 @@
 
   <body>
     <!-- Navbar Adding -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #e3f2fd;">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Link</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#about">ANIMESH</a>
+            <a class="nav-link" href="#edu">Education</a>
+            <a class="nav-link" href="#resint">Research Interest</a>
+            <a class="nav-link" href="#pub">Publications</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#awards">Awards</a>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- Profile -->
-    <div class="card mb-1 w-100" >
+    <div id="home" class="card mb-1 w-100" >
       <div class="row g-0">
         <div class="col-md-4">
           <img src="p.jpeg" class="img-fluid rounded-start" alt="...">
@@ -123,7 +105,7 @@
     </div>
 
     <!-- About card -->
-    <div class="card text-center">
+    <div id = "about" class="card text-center">
       <div class="card-header">
         <h1>ABOUT ANIMESH </h1>
       </div>
@@ -146,7 +128,7 @@
     
 
     <!-- EDUCATION card -->
-    <div class="card text-center">
+    <div id="edu" class="card text-center">
       <div class="card-header">
         <h1>EDUCATION </h1>
         </div>
@@ -214,7 +196,7 @@
 
 
     <!-- RESEARCH INTEREST card -->
-    <div class="card text-center">
+    <div id="resint" class="card text-center">
       <div class="card-header">
         <h1>RESEARCH INTEREST </h1>
         </div>
@@ -241,7 +223,7 @@
   
 
     <!-- PUBLICATIONS -->
-    <div class="card text-center">
+    <div id="pub" class="card text-center">
       <div class="card-header">
         <h1>PUBLICATIONS </h1>
         </div>
@@ -295,7 +277,7 @@
 
 
   <!-- SKILLS PICTURE! -->
-  <div class="card text-center">
+  <div id = "skills" class="card text-center">
     <div class="card-header">
       <h1>SKILLS </h1>
       </div>
@@ -423,7 +405,7 @@
 
 
     <!-- Awards -->
-    <div class="card text-center">
+    <div id="awards" class="card text-center">
       <div class="card-header">
         <h1>AWARDS & ACHIEVEMENTS</h1>
         </div>
@@ -462,7 +444,7 @@
       </div>
     </div>
     
-    
+
     <footer>
     <p><b>&copy; All rights reserved to Animesh Sarkar</b></p>
   </footer>
